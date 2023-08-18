@@ -1,18 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const h1Element = document.getElementById("1");
-
   updateTime();
-
   setInterval(updateTime, 1000);
 
-  function updateImage() {
+  function updateTime() {
     const currentTime = new Date();
     const hours = currentTime.getHours();
     const minutes = currentTime.getMinutes();
-
     const hour1 = Math.floor(hours / 10);
     const hour2 = hours % 10;
-
     const min1 = Math.floor(minutes / 10);
     const min2 = minutes % 10;
 
@@ -27,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("20").classList.add("now");
         break;
     }
-
     switch (hour2) {
       case 1:
         document.getElementById("0").classList.remove("now");
@@ -66,11 +60,12 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("9").classList.add("now");
         break;
     }
-
     if (hour1 === 0 && hour2 === 0) {
       document.getElementById("horin").classList.remove("now");
       document.getElementById("gurvan").classList.remove("now");
       document.getElementById("0").classList.add("now");
+    } else {
+      document.getElementById("0").classList.remove("now");
     }
 
     //minut
