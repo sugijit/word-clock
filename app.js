@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     switch (hour2) {
       case 1:
-        document.getElementById("0").classList.remove("now");
         document.getElementById("negen").classList.add("now");
         break;
       case 2:
@@ -73,30 +72,25 @@ document.addEventListener("DOMContentLoaded", function () {
       case 1:
         document.getElementById("tavin").classList.remove("now");
         document.getElementById("yusun").classList.remove("now");
-        document.getElementById("teg").classList.remove("now");
         document.getElementById("arvan").classList.add("now");
         break;
       case 2:
         document.getElementById("arvan").classList.remove("now");
-        document.getElementById("teg").classList.remove("now");
         document.getElementById("yusun").classList.remove("now");
         document.getElementById("horin").classList.add("now");
         break;
       case 3:
         document.getElementById("horin").classList.remove("now");
-        document.getElementById("teg").classList.remove("now");
         document.getElementById("yusun").classList.remove("now");
         document.getElementById("guchin").classList.add("now");
         break;
       case 4:
         document.getElementById("guchin").classList.remove("now");
-        document.getElementById("teg").classList.remove("now");
         document.getElementById("yusun").classList.remove("now");
         document.getElementById("duchin").classList.add("now");
         break;
       case 5:
         document.getElementById("duchin").classList.remove("now");
-        document.getElementById("teg").classList.remove("now");
         document.getElementById("yusun").classList.remove("now");
         document.getElementById("tavin").classList.add("now");
         break;
@@ -104,7 +98,6 @@ document.addEventListener("DOMContentLoaded", function () {
     switch (min2) {
       case 1:
         document.getElementById("yusun").classList.remove("now");
-        document.getElementById("teg").classList.remove("now");
         document.getElementById("negenn").classList.add("now");
         break;
       case 2:
