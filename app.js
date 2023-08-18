@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("negenn").classList.add("now");
         break;
       case 2:
-        document.getElementById("negen").classList.remove("now");
+        document.getElementById("negenn").classList.remove("now");
         document.getElementById("hoyor").classList.add("now");
         break;
       case 3:
