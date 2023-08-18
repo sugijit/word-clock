@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   updateImage();
 
-  setInterval(updateImage, 60000);
+  setInterval(updateImage, 1000);
 
   function updateImage() {
     const currentTime = new Date();
