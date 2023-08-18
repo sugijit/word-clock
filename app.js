@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
   const h1Element = document.getElementById("1");
 
-  updateImage();
+  updateTime();
 
-  setInterval(updateImage, 1000);
+  setInterval(updateTime, 1000);
 
   function updateImage() {
     const currentTime = new Date();
