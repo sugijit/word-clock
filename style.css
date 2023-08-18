@@ -44,3 +44,12 @@ body {
   color: greenyellow;
   text-shadow: rgb(139, 246, 104) 1px 0 10px;
 }
+
+@media only screen and (max-width: 500px) {
+  .container {
+    max-width: 100%;
+  }
+  .clock h1 {
+    font-size: 4.5vw;
+  }
+}
