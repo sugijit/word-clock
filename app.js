@@ -14,19 +14,27 @@ document.addEventListener("DOMContentLoaded", function () {
     //tsag
     switch (hour1) {
       case 1:
+        document.getElementById("9").classList.remove("now");
         document.getElementById("20").classList.remove("now");
         document.getElementById("10").classList.add("now");
         break;
       case 2:
+        document.getElementById("9").classList.remove("now");
         document.getElementById("10").classList.remove("now");
         document.getElementById("20").classList.add("now");
         break;
     }
     switch (hour2) {
       case 1:
-        document.getElementById("negen").classList.add("now");
+        document.getElementById("9").classList.remove("now");
+        if (hour1 === 0) {
+          document.getElementById("1").classList.add("now");
+        } else {
+          document.getElementById("negen").classList.add("now");
+        }
         break;
       case 2:
+        document.getElementById("1").classList.remove("now");
         document.getElementById("negen").classList.remove("now");
         document.getElementById("2").classList.add("now");
         break;
@@ -62,6 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (hour1 === 0 && hour2 === 0) {
       document.getElementById("horin").classList.remove("now");
       document.getElementById("gurvan").classList.remove("now");
+      document.getElementById("9").classList.remove("now");
       document.getElementById("0").classList.add("now");
     } else {
       document.getElementById("0").classList.remove("now");
@@ -98,10 +107,15 @@ document.addEventListener("DOMContentLoaded", function () {
     switch (min2) {
       case 1:
         document.getElementById("yusun").classList.remove("now");
-        document.getElementById("negenn").classList.add("now");
+        if (min1 === 0) {
+          document.getElementById("neg").classList.add("now");
+        } else {
+          document.getElementById("negenn").classList.add("now");
+        }
         break;
       case 2:
         document.getElementById("negenn").classList.remove("now");
+        document.getElementById("neg").classList.remove("now");
         document.getElementById("hoyor").classList.add("now");
         break;
       case 3:
