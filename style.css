@@ -31,7 +31,7 @@ body {
 }
 
 .clock h1 {
-  color: rgb(24, 24, 24);
+  color: rgb(34, 34, 34);
   font-size: 3vw;
   white-space: nowrap;
   overflow: hidden;
