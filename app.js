@@ -149,6 +149,8 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("tavin").classList.remove("now");
       document.getElementById("yusun").classList.remove("now");
       document.getElementById("teg").classList.add("now");
+    } else {
+      document.getElementById("teg").classList.remove("now");
     }
   }
 });
