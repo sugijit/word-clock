@@ -104,6 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
     switch (min2) {
       case 1:
         document.getElementById("yusun").classList.remove("now");
+        document.getElementById("teg").classList.remove("now");
         document.getElementById("negenn").classList.add("now");
         break;
       case 2:
