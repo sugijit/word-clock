@@ -51,7 +51,7 @@ body {
 /* testing */
 .playlist {
   text-align: center;
-  margin: 50px auto 200px auto;
+  margin: 0 auto 200px auto;
   width: 53%;
   padding: 20px;
   border: 1px white solid;
@@ -82,8 +82,8 @@ li:hover {
 }
 
 #play-pause-button {
-  background-color: #4caf50;
-  color: white;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   border: none;
   padding: 10px 20px;
   margin-top: 20px;
@@ -93,7 +93,7 @@ li:hover {
 }
 
 #play-pause-button:hover {
-  background-color: #45a049;
+  background-color: #d5d5d5;
 }
 
 .hidden {
