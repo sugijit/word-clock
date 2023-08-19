@@ -41,9 +41,8 @@
           >БЛЭКРЭЙН
         </h1>
         <h1>
-          Ц<span id="neg">НЭГ</span>Б<span id="guchin">ГУЧИН</span>ЕЮТЭ<span
-            id="horin"
-            >ХОРИН</span
+          Ц<span id="neg">НЭГ</span><span id="toggle-playlist">Б</span
+          ><span id="guchin">ГУЧИН</span>ЕЮТЭ<span id="horin">ХОРИН</span
           ><span id="tavin">ТАВИН</span>С
         </h1>
         <h1>
@@ -70,6 +69,15 @@
     <audio id="audioElement2">
       <source src="sheep-2.mp3" type="audio/mpeg" />
     </audio>
+
+    <!-- testingg -->
+    <div id="playlist-container" class="playlist hidden">
+      <h3>Өнөөдрийн сонголт</h3>
+      <audio id="audio-player"></audio>
+      <ul id="song-list"></ul>
+      <button id="play-pause-button">Play</button>
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>

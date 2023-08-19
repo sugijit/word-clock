@@ -173,3 +173,56 @@ soundSpans2.forEach((span) => {
     audioElement2.play();
   });
 });
+
+// test
+const songs = [
+  { title: "TATAR ft Michelle - Jargaltai khos", source: "jargaltai-khos.mp3" },
+  { title: "Jagaa(TATAR) - Zugeer", source: "zugeer.mp3" },
+  {
+    title: "Ulaanbaatariin Nulims - TATAR ft Young Mo'G, Ginjin",
+    source: "tears-of-ub.mp3",
+  },
+];
+
+const audioPlayer = document.getElementById("audio-player");
+const songList = document.getElementById("song-list");
+const playPauseButton = document.getElementById("play-pause-button");
+const togglePlaylistButton = document.getElementById("toggle-playlist");
+const playlistContainer = document.getElementById("playlist-container");
+
+let currentSongIndex = -1;
+
+function togglePlaylistVisibility() {
+  playlistContainer.classList.toggle("hidden");
+}
+
+togglePlaylistButton.addEventListener("click", togglePlaylistVisibility);
+
+function togglePlayPause() {
+  if (audioPlayer.paused) {
+    audioPlayer.play();
+    playPauseButton.textContent = "Pause";
+  } else {
+    audioPlayer.pause();
+    playPauseButton.textContent = "Play";
+  }
+}
+playPauseButton.addEventListener("click", togglePlayPause);
+
+function loadSong(index) {
+  currentSongIndex = index;
+  audioPlayer.src = songs[index].source;
+  audioPlayer.play();
+  playPauseButton.textContent = "Pause";
+}
+
+function populatePlaylist() {
+  for (let i = 0; i < songs.length; i++) {
+    const listItem = document.createElement("li");
+    listItem.textContent = songs[i].title;
+    listItem.addEventListener("click", () => loadSong(i));
+    songList.appendChild(listItem);
+  }
+}
+
+populatePlaylist();

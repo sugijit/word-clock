@@ -48,11 +48,82 @@ body {
   text-shadow: rgb(139, 246, 104) 1px 0 10px;
 }
 
+/* testing */
+.playlist {
+  text-align: center;
+  margin: 50px auto 200px auto;
+  width: 53%;
+  padding: 20px;
+  border: 1px white solid;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: white;
+}
+
+li:hover {
+  background-color: #181818;
+}
+
+#play-pause-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#play-pause-button:hover {
+  background-color: #45a049;
+}
+
+.hidden {
+  display: none;
+}
+
+/* phones */
+
 @media only screen and (max-width: 500px) {
   .container {
     max-width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 200px auto 50px auto;
   }
   .clock h1 {
     font-size: 4.5vw;
+  }
+  .playlist {
+    text-align: center;
+    margin: 5px auto 200px auto;
+    width: 80%;
+  }
+  .clock {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
