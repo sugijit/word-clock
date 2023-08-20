@@ -50,7 +50,20 @@ body {
   text-shadow: rgb(139, 246, 104) 1px 0 10px;
 }
 
-/* testing */
+.desc {
+  margin-top: 50px;
+  color: rgb(34, 34, 34);
+}
+
+.seconds {
+  color: white;
+  color: rgb(34, 34, 34);
+}
+.seconds p {
+  font-size: 0.5vh;
+}
+
+/* testing playlist*/
 .playlist {
   text-align: center;
   margin: 0 auto 200px auto;
@@ -127,5 +140,13 @@ li:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .desc {
+    font-size: small;
+  }
+  .seconds {
+    word-wrap: break-word;
+    max-width: 400px;
+    text-align: center;
   }
 }
