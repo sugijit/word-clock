@@ -149,4 +149,10 @@ li:hover {
     max-width: 400px;
     text-align: center;
   }
+  .on {
+    text-shadow: rgb(41, 103, 20) 0.2px 0 4px;
+  }
+  .beer {
+    text-shadow: rgb(114, 40, 40) 0.2px 0 4px;
+  }
 }
